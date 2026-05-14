@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#faf5ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="460" fill="url(#bgGrad)"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="54" fill="#ffffff"/>
+  <rect width="800" height="1" y="54" fill="#e2e8f0"/>
+  <!-- Logo -->
+  <circle cx="28" cy="27" r="10" fill="#7c3aed"/>
+  <text x="25" y="32" fill="white" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="800">m</text>
+  <text x="45" y="32" fill="#1e1b4b" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="800">mimozi</text>
+  <text x="108" y="32" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600"> beta</text>
+  <!-- Nav items -->
+  <text x="580" y="31" fill="#6b7280" font-family="Inter, system-ui, sans-serif" font-size="13">Tableau de bord</text>
+  <text x="692" y="31" fill="#6b7280" font-family="Inter, system-ui, sans-serif" font-size="13">Profils</text>
+  <rect x="742" y="13" width="44" height="28" rx="6" fill="#7c3aed"/>
+  <text x="754" y="31" fill="white" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600">Pro</text>
+
+  <!-- Left panel: mobile app mockup -->
+  <rect x="32" y="80" width="228" height="360" rx="24" fill="#1e1b4b" stroke="#312e81" stroke-width="2"/>
+  <rect x="42" y="92" width="208" height="336" rx="18" fill="#f8fafc"/>
+  <!-- Phone notch -->
+  <rect x="118" y="90" width="76" height="18" rx="9" fill="#1e1b4b"/>
+
+  <!-- App header inside phone -->
+  <rect x="42" y="110" width="208" height="44" fill="white"/>
+  <text x="58" y="129" fill="#1e1b4b" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="800">mimozi</text>
+  <text x="58" y="143" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="8">Bonjour, Marie</text>
+  <circle cx="228" cy="132" r="12" fill="#7c3aed" opacity="0.15"/>
+  <text x="224" y="137" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="14">M</text>
+
+  <!-- Divider -->
+  <rect x="42" y="154" width="208" height="1" fill="#f1f5f9"/>
+
+  <!-- Instruction text -->
+  <text x="58" y="172" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Photo de l'exercice</text>
+
+  <!-- Photo upload area -->
+  <rect x="54" y="178" width="184" height="110" rx="10" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Math problem in the photo area -->
+  <rect x="62" y="186" width="168" height="94" rx="8" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="78" y="206" fill="#374151" font-family="Georgia, serif" font-size="10" font-weight="600">Exercice 3 — Algèbre</text>
+  <text x="78" y="222" fill="#1f2937" font-family="Georgia, serif" font-size="11">Résoudre : 2x² + 5x - 3 = 0</text>
+  <line x1="78" y1="230" x2="218" y2="230" stroke="#f3f4f6" stroke-width="1"/>
+  <text x="78" y="246" fill="#6b7280" font-family="Georgia, serif" font-size="9">Montrer toutes les étapes.</text>
+  <text x="78" y="260" fill="#6b7280" font-family="Georgia, serif" font-size="9">Vérifier la solution.</text>
+  <!-- Camera icon -->
+  <circle cx="220" cy="257" r="12" fill="#7c3aed"/>
+  <text x="215" y="261" fill="white" font-family="Inter, system-ui, sans-serif" font-size="12">⊙</text>
+
+  <!-- Divider -->
+  <rect x="42" y="296" width="208" height="1" fill="#f1f5f9"/>
+
+  <!-- AI Response section in phone -->
+  <text x="58" y="314" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Guide pédagogique IA</text>
+  <rect x="54" y="320" width="184" height="96" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+  <circle cx="67" cy="335" r="6" fill="#7c3aed"/>
+  <text x="64" y="339" fill="white" font-family="Inter, system-ui, sans-serif" font-size="8" font-weight="700">AI</text>
+  <text x="78" y="336" fill="#6d28d9" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700">Étape 1 — Identifier le type</text>
+  <text x="58" y="350" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="8">C'est une équation du second degré.</text>
+  <text x="58" y="362" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="8">On utilise la formule : x = (-b ± √Δ) / 2a</text>
+  <text x="58" y="378" fill="#6d28d9" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="700">Étape 2 — Calculer Δ</text>
+  <text x="58" y="390" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="8">Δ = b² - 4ac = 25 + 24 = 49</text>
+  <text x="58" y="402" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="8">Δ &gt; 0 → deux solutions réelles</text>
+
+  <!-- Phone bottom nav -->
+  <rect x="42" y="404" width="208" height="24" rx="0" fill="white"/>
+  <rect x="42" y="403" width="208" height="1" fill="#f1f5f9"/>
+  <text x="82" y="420" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="8" font-weight="600">Accueil</text>
+  <text x="142" y="420" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="8">Historique</text>
+  <text x="200" y="420" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="8">Profils</text>
+
+  <!-- Right panel: desktop dashboard -->
+  <rect x="288" y="80" width="488" height="360" rx="12" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Dashboard header -->
+  <rect x="288" y="80" width="488" height="48" rx="12" fill="#1e1b4b"/>
+  <rect x="288" y="110" width="488" height="18" fill="#1e1b4b"/>
+  <text x="308" y="109" fill="white" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700">Tableau de bord — Famille Martin</text>
+  <rect x="712" y="90" width="52" height="24" rx="6" fill="#7c3aed"/>
+  <text x="724" y="106" fill="white" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600">+ Enfant</text>
+
+  <!-- Stats row -->
+  <rect x="300" y="142" width="100" height="60" rx="8" fill="#f5f3ff"/>
+  <text x="316" y="163" fill="#6d28d9" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800">12</text>
+  <text x="308" y="178" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="9">exercices</text>
+  <text x="308" y="190" fill="#a78bfa" font-family="Inter, system-ui, sans-serif" font-size="8">cette semaine</text>
+
+  <rect x="412" y="142" width="100" height="60" rx="8" fill="#f0fdf4"/>
+  <text x="428" y="163" fill="#16a34a" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800">87%</text>
+  <text x="420" y="178" fill="#15803d" font-family="Inter, system-ui, sans-serif" font-size="9">compris</text>
+  <text x="420" y="190" fill="#86efac" font-family="Inter, system-ui, sans-serif" font-size="8">taux de réussite</text>
+
+  <rect x="524" y="142" width="100" height="60" rx="8" fill="#fff7ed"/>
+  <text x="534" y="163" fill="#ea580c" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800">3j</text>
+  <text x="534" y="178" fill="#c2410c" font-family="Inter, system-ui, sans-serif" font-size="9">streak actif</text>
+  <text x="534" y="190" fill="#fdba74" font-family="Inter, system-ui, sans-serif" font-size="8">consécutifs</text>
+
+  <rect x="636" y="142" width="124" height="60" rx="8" fill="#fdf4ff"/>
+  <text x="652" y="163" fill="#9333ea" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800">42</text>
+  <text x="650" y="178" fill="#7e22ce" font-family="Inter, system-ui, sans-serif" font-size="9">crédits restants</text>
+  <rect x="652" y="186" width="80" height="6" rx="3" fill="#e9d5ff"/>
+  <rect x="652" y="186" width="52" height="6" rx="3" fill="#9333ea"/>
+
+  <!-- Child profiles -->
+  <text x="308" y="226" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">Profils enfants</text>
+
+  <!-- Child card 1 -->
+  <rect x="300" y="234" width="218" height="76" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1"/>
+  <circle cx="324" cy="272" r="18" fill="#7c3aed"/>
+  <text x="318" y="277" fill="white" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">L</text>
+  <text x="350" y="258" fill="#1e1b4b" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700">Lucas, 12 ans</text>
+  <text x="350" y="272" fill="#6d28d9" font-family="Inter, system-ui, sans-serif" font-size="9">5ème · Collège</text>
+  <rect x="350" y="280" width="140" height="5" rx="2" fill="#e9d5ff"/>
+  <rect x="350" y="280" width="110" height="5" rx="2" fill="#7c3aed"/>
+  <text x="350" y="300" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="8">Progression : 78%</text>
+
+  <!-- Child card 2 -->
+  <rect x="530" y="234" width="230" height="76" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <circle cx="554" cy="272" r="18" fill="#16a34a"/>
+  <text x="548" y="277" fill="white" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">E</text>
+  <text x="580" y="258" fill="#1e1b4b" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700">Emma, 9 ans</text>
+  <text x="580" y="272" fill="#15803d" font-family="Inter, system-ui, sans-serif" font-size="9">CE2 · Primaire</text>
+  <rect x="580" y="280" width="152" height="5" rx="2" fill="#bbf7d0"/>
+  <rect x="580" y="280" width="130" height="5" rx="2" fill="#16a34a"/>
+  <text x="580" y="300" fill="#9ca3af" font-family="Inter, system-ui, sans-serif" font-size="8">Progression : 95%</text>
+
+  <!-- Recent sessions -->
+  <text x="308" y="332" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700">Sessions récentes</text>
+
+  <rect x="300" y="340" width="460" height="32" rx="6" fill="#f8fafc"/>
+  <circle cx="318" cy="356" r="8" fill="#7c3aed" opacity="0.15"/>
+  <text x="314" y="360" fill="#7c3aed" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700">L</text>
+  <text x="332" y="358" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="10">Lucas · Équations du 2nd degré</text>
+  <text x="620" y="358" fill="#16a34a" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Compris ✓</text>
+  <text x="686" y="358" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="9">il y a 2h</text>
+
+  <rect x="300" y="378" width="460" height="32" rx="6" fill="#f8fafc"/>
+  <circle cx="318" cy="394" r="8" fill="#16a34a" opacity="0.15"/>
+  <text x="314" y="398" fill="#16a34a" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="700">E</text>
+  <text x="332" y="396" fill="#374151" font-family="Inter, system-ui, sans-serif" font-size="10">Emma · Fractions et décimaux</text>
+  <text x="620" y="396" fill="#16a34a" font-family="Inter, system-ui, sans-serif" font-size="9" font-weight="600">Compris ✓</text>
+  <text x="686" y="396" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="9">hier</text>
+
+  <!-- Tech stack footer -->
+  <rect x="288" y="416" width="488" height="24" rx="0" fill="#f8fafc"/>
+  <rect x="288" y="428" width="488" height="12" rx="0" fill="#f8fafc"/>
+  <rect x="288" y="415" width="488" height="1" fill="#e2e8f0"/>
+  <rect x="288" y="427" width="488" height="1" fill="#e2e8f0"/>
+  <text x="308" y="423" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="8">Next.js · TypeScript · Tailwind · Supabase · Anthropic API · Vercel</text>
+
+  <!-- Bottom label strip -->
+  <rect y="440" width="800" height="20" fill="#1e1b4b"/>
+  <text x="288" y="453" fill="#818cf8" font-family="Inter, system-ui, sans-serif" font-size="9">mimozi.fr — Application IA mobile-first pour l'aide aux devoirs de maths</text>
+</svg>

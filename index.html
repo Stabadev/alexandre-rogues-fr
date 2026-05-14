@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandre Rogues — Data & IA | Du besoin au produit</title>
+  <meta name="description" content="Profil hybride data et IA locale. Analyse des besoins, conception de solutions, déploiement. Pédagogie et impact concret." />
+  <link rel="canonical" href="https://alexandre.rogues.fr/" />
+  <link rel="alternate" hreflang="fr" href="https://alexandre.rogues.fr/" />
+  <link rel="alternate" hreflang="en" href="https://alexandre.rogues.fr/en/" />
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alexandre.rogues.fr/" />
+  <meta property="og:title" content="Alexandre Rogues — Data & IA | Du besoin au produit" />
+  <meta property="og:description" content="Profil hybride data et IA locale. Analyse des besoins, conception de solutions, déploiement. Pédagogie et impact concret." />
+  <meta property="og:image" content="https://alexandre.rogues.fr/portrait.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alexandre Rogues – Data Engineer & Data Analyst" />
+  <meta name="twitter:description" content="Profil hybride data, technique et métier." />
+  <meta name="twitter:image" content="https://alexandre.rogues.fr/portrait.webp" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alexandre Rogues",
+    "url": "https://alexandre.rogues.fr",
+    "email": "alexandre.rogues@gmail.com",
+    "jobTitle": "Data Engineer / Data Analyst",
+    "address": { "@type": "PostalAddress", "addressLocality": "Pélussin", "addressCountry": "FR" },
+    "sameAs": [
+      "https://www.linkedin.com/in/alexandrerogues/",
+      "https://github.com/Stabadev"
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="portrait.webp" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .email-link { font-size: 1rem; }
+    @media (max-width: 767px) {
+      footer { padding-bottom: 5rem; }
+    }
+    @media (min-width: 768px) {
+      .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .email-link { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body class="bg-surface text-ink font-sans antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 w-full z-50 glass shadow-[0_4px_30px_rgba(0,60,41,0.08)] border-b border-edge-light/30">
+    <nav class="flex items-center justify-between max-w-7xl mx-auto px-6" style="height:4.5rem;">
+      <span class="text-lg font-bold tracking-tight text-primary">Alexandre Rogues</span>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-10">
+        <a href="#profil" class="nav-link text-primary font-semibold border-b-2 border-primary pb-0.5 text-sm tracking-tight">Profil</a>
+        <a href="#experience" class="nav-link text-ink-dim hover:text-primary transition-colors text-sm tracking-tight">Expérience</a>
+        <a href="#projets" class="nav-link text-ink-dim hover:text-primary transition-colors text-sm tracking-tight">Projets</a>
+        <a href="#competences" class="nav-link text-ink-dim hover:text-primary transition-colors text-sm tracking-tight">Compétences</a>
+        <a href="#formation" class="nav-link text-ink-dim hover:text-primary transition-colors text-sm tracking-tight">Formation</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="/en/" class="text-xs font-bold uppercase tracking-widest text-ink-dim hover:text-primary transition-colors px-2 py-1 rounded border border-edge-light hover:border-primary">EN</a>
+        <a href="CV_Rogues_Alexandre_122025.pdf" download class="hidden md:flex items-center gap-1.5 bg-primary text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-primary-light transition-colors">
+          <span class="material-symbols-outlined text-base">download</span>
+          Télécharger le CV
+        </a>
+        <button id="menu-btn" class="md:hidden text-primary" aria-label="Menu">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-edge-light/30 bg-white/95 backdrop-blur-xl">
+      <div class="flex flex-col px-6 py-4 gap-4">
+        <a href="#profil" class="text-primary font-semibold text-sm">Profil</a>
+        <a href="#experience" class="text-ink-dim text-sm">Expérience</a>
+        <a href="#projets" class="text-ink-dim text-sm">Projets</a>
+        <a href="#competences" class="text-ink-dim text-sm">Compétences</a>
+        <a href="#formation" class="text-ink-dim text-sm">Formation</a>
+        <a href="CV_Rogues_Alexandre_122025.pdf" download class="flex items-center gap-1.5 bg-primary text-white text-sm font-semibold px-4 py-2.5 rounded-lg w-fit">
+          <span class="material-symbols-outlined text-base">download</span>
+          Télécharger le CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-[4.5rem]">
+
+    <!-- HERO -->
+    <section id="profil" class="max-w-7xl mx-auto px-6 py-24 md:py-32">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
+
+        <div class="md:col-span-7 hidden-fade">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary-light mb-5 block">Data & IA — Du besoin au produit</span>
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.05] mb-6">
+            Je transforme des besoins flous<br/>
+            <span class="text-edge-light">en solutions concrètes.</span>
+          </h1>
+          <p class="text-lg text-ink-dim leading-relaxed max-w-xl mb-10">
+            Profil hybride à l'intersection de la technique et du métier.
+            Je sais écouter un besoin, concevoir une solution data ou IA, et l'expliquer à ceux qui vont l'utiliser.
+          </p>
+          <div class="flex flex-wrap gap-2.5 mb-10">
+            <span class="px-3.5 py-1.5 bg-surface-low text-primary rounded-full text-xs font-semibold">Pipelines de données</span>
+            <span class="px-3.5 py-1.5 bg-surface-low text-primary rounded-full text-xs font-semibold">Machine Learning</span>
+            <span class="px-3.5 py-1.5 bg-surface-low text-primary rounded-full text-xs font-semibold">Python · SQL</span>
+            <span class="px-3.5 py-1.5 bg-surface-low text-primary rounded-full text-xs font-semibold">Pédagogie</span>
+            <span class="px-3.5 py-1.5 bg-surface-low text-primary rounded-full text-xs font-semibold">Approche pragmatique</span>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="#experience" class="flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-xl hover:bg-primary-light transition-colors">
+              Voir le parcours
+              <span class="material-symbols-outlined text-base">arrow_downward</span>
+            </a>
+            <a href="mailto:alexandre.rogues@gmail.com" class="flex items-center gap-2 border border-edge-light text-ink-dim font-semibold px-6 py-3 rounded-xl hover:border-primary hover:text-primary transition-colors">
+              Contact
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-5 hidden-fade">
+          <div class="relative">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl bg-surface-high">
+              <img
+                src="portrait.webp"
+                alt="Portrait d'Alexandre Rogues"
+                class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                width="600" height="750"
+              />
+            </div>
+            <div class="absolute -bottom-4 -right-4 w-28 h-28 bg-primary/10 rounded-2xl -z-10"></div>
+            <div class="absolute -top-4 -left-4 w-16 h-16 bg-primary-fixed/40 rounded-xl -z-10"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPÉRIENCE -->
+    <section id="experience" class="bg-surface-low py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 hidden-fade">
+          <h2 class="text-4xl font-bold tracking-tight text-primary">Parcours professionnel</h2>
+        </div>
+
+        <div class="relative pl-6 md:pl-0">
+          <div class="absolute left-0 top-0 bottom-0 w-px bg-edge-light/40 md:hidden"></div>
+
+          <!-- Développement indépendant -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 mb-16 group hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary opacity-50 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Nov. 2025 — Actuel</span>
+            </div>
+            <div class="md:col-span-1 relative flex justify-center">
+              <div class="absolute top-0 bottom-0 w-px bg-edge-light/30 hidden md:block"></div>
+              <div class="w-3 h-3 rounded-full bg-primary mt-2 z-10 shadow-[0_0_12px_rgba(0,60,41,0.5)]"></div>
+            </div>
+            <div class="md:col-span-8 bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition-all border border-edge-light/20">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-primary">Développement indépendant & recherche</h3>
+                  <p class="text-primary-light font-semibold text-xs uppercase tracking-widest mt-1">Projets personnels · Veille & apprentissage</p>
+                </div>
+                <span class="text-xs text-ink-dim bg-surface-low px-2.5 py-1 rounded-full">Actuel</span>
+              </div>
+              <p class="text-sm text-ink-dim mb-4 md:hidden">Nov. 2025 — Actuel</p>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Recherche personnelle sur les architectures d'IA modernes : world models, représentation latente et planification sans supervision</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Développement et déploiement de projets full-stack : SaaS IA (mimozi), pipeline computer vision temps réel (VisionTrafic)</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Veille technologique continue : LLMs, architectures Transformer, MLOps, outils IA open-source</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">PyTorch</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Python</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Next.js</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Deep Learning</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">VPS Linux</span>
+              </div>
+              <div class="mt-5">
+                <a href="#projets" class="inline-flex items-center gap-2 border border-primary text-primary font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-primary hover:text-white transition-colors">
+                  <span class="material-symbols-outlined text-base">arrow_downward</span>
+                  Voir les projets
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pandata -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 mb-16 group hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary opacity-50 group-hover:opacity-100 transition-opacity uppercase tracking-widest">Nov 2024 — Oct 2025</span>
+            </div>
+            <div class="md:col-span-1 relative flex justify-center">
+              <div class="absolute top-0 bottom-0 w-px bg-edge-light/30 hidden md:block"></div>
+              <div class="w-3 h-3 rounded-full bg-primary mt-2 z-10 shadow-[0_0_12px_rgba(0,60,41,0.5)]"></div>
+            </div>
+            <div class="md:col-span-8 bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition-all border border-edge-light/20">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-primary">Pandata</h3>
+                  <p class="text-primary-light font-semibold text-xs uppercase tracking-widest mt-1">Data Analyst & R&D IA Locale</p>
+                </div>
+                <span class="text-xs text-ink-dim bg-surface-low px-2.5 py-1 rounded-full">Loire, France</span>
+              </div>
+              <p class="text-sm text-ink-dim mb-4 md:hidden">Nov 2024 — Oct 2025</p>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Mission analytique (Sanofi) : analyse structurelle d'un data model d'obsolescence matériel/logiciel du parc informatique, visualisations Power BI</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>R&D IA locale : conception et déploiement de 5 à 6 chatbots RAG spécialisés (Ollama, GPU local), dont un assistant bénévoles pour un festival de musique</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Benchmarking de modèles LLM, monitoring des ressources, déploiement d'OpenWebUI</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Veille technologique intensive sur les LLMs locaux et les architectures RAG</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Python</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Ollama</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">RAG</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Power BI</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">LLM</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">OpenWebUI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mairie -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 mb-16 group hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary opacity-50 group-hover:opacity-100 transition-opacity uppercase tracking-widest">2021 — 2023</span>
+            </div>
+            <div class="md:col-span-1 relative flex justify-center">
+              <div class="absolute top-0 bottom-0 w-px bg-edge-light/30 hidden md:block"></div>
+              <div class="w-3 h-3 rounded-full bg-edge mt-2 z-10 group-hover:bg-primary transition-colors"></div>
+            </div>
+            <div class="md:col-span-8 bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition-all border border-edge-light/20">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-primary">Mairie de Saint-Julien-Chapteuil</h3>
+                  <p class="text-primary-light font-semibold text-xs uppercase tracking-widest mt-1">Conseiller Numérique / Chef de projet digital</p>
+                </div>
+                <span class="text-xs text-ink-dim bg-surface-low px-2.5 py-1 rounded-full">Haute-Loire</span>
+              </div>
+              <p class="text-sm text-ink-dim mb-4 md:hidden">2021 — 2023</p>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Déploiement d'outils numériques (GED, Nextcloud, wiki, prise de RDV)</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Analyse des besoins métiers et coordination de prestataires</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Support utilisateurs multi-niveaux et conduite du changement</li>
+              </ul>
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Gestion de projet</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Support IT</span>
+                <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Conduite du changement</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Éducation Nationale -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 mb-16 group hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary opacity-50 group-hover:opacity-100 transition-opacity uppercase tracking-widest">2016 — 2020</span>
+            </div>
+            <div class="md:col-span-1 relative flex justify-center">
+              <div class="absolute top-0 bottom-0 w-px bg-edge-light/30 hidden md:block"></div>
+              <div class="w-3 h-3 rounded-full bg-edge mt-2 z-10 group-hover:bg-primary transition-colors"></div>
+            </div>
+            <div class="md:col-span-8 bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition-all border border-edge-light/20">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-primary">Éducation Nationale</h3>
+                  <p class="text-primary-light font-semibold text-xs uppercase tracking-widest mt-1">Professeur de mathématiques</p>
+                </div>
+                <span class="text-xs text-ink-dim bg-surface-low px-2.5 py-1 rounded-full">Haute-Loire</span>
+              </div>
+              <p class="text-sm text-ink-dim mb-4 md:hidden">2016 — 2020</p>
+              <ul class="space-y-1.5">
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Enseignement du collège à la terminale</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Création de supports pédagogiques numériques</li>
+                <li class="flex items-start gap-2 text-sm text-ink-dim"><span class="w-1.5 h-1.5 rounded-full bg-primary-light mt-1.5 shrink-0"></span>Vulgarisation de concepts complexes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cours particuliers -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 mb-16 group hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary opacity-50 group-hover:opacity-100 transition-opacity uppercase tracking-widest">2010 — 2024</span>
+            </div>
+            <div class="md:col-span-1 relative flex justify-center">
+              <div class="absolute top-0 h-10 w-px bg-edge-light/30 hidden md:block"></div>
+              <div class="w-3 h-3 rounded-full bg-edge mt-2 z-10 group-hover:bg-primary transition-colors"></div>
+            </div>
+            <div class="md:col-span-8 bg-white p-7 rounded-2xl shadow-sm hover:shadow-md transition-all border border-edge-light/20">
+              <div class="flex flex-wrap items-start justify-between gap-3 mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-primary">Cours particuliers de mathématiques</h3>
+                  <p class="text-primary-light font-semibold text-xs uppercase tracking-widest mt-1">Indépendant · Le Puy-en-Velay</p>
+                </div>
+              </div>
+              <p class="text-sm text-ink-dim mb-4 md:hidden">2010 — 2024</p>
+              <p class="text-sm text-ink-dim">Accompagnement individualisé d'élèves, conception de parcours personnalisés et suivi des progrès. Activité menée en parallèle de mon parcours professionnel.</p>
+            </div>
+          </div>
+
+          <!-- Expériences antérieures -->
+          <div class="relative grid md:grid-cols-12 gap-6 md:gap-8 hidden-fade">
+            <div class="hidden md:block md:col-span-3 text-right pr-10 pt-1">
+              <span class="text-xs font-bold text-primary/30 uppercase tracking-widest">Antérieur</span>
+            </div>
+            <div class="md:col-span-1 flex justify-center">
+              <div class="w-2 h-2 rounded-full bg-edge-light mt-2"></div>
+            </div>
+            <div class="md:col-span-8">
+              <p class="text-xs font-bold uppercase tracking-widest text-ink-dim mb-3">Expériences antérieures</p>
+              <div class="flex flex-wrap gap-3">
+                <span class="text-xs text-ink-dim bg-white border border-edge-light/30 px-3 py-1.5 rounded-full">Support client B2B · ExxonMobil, Budapest (2010–2011)</span>
+                <span class="text-xs text-ink-dim bg-white border border-edge-light/30 px-3 py-1.5 rounded-full">Agent d'accueil bancaire · Crédit Agricole (2014–2015)</span>
+                <span class="text-xs text-ink-dim bg-white border border-edge-light/30 px-3 py-1.5 rounded-full">Commercial itinérant · Salaisons Manet (2008–2009)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="max-w-7xl mx-auto px-6 py-24">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 hidden-fade">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary-light mb-3 block">Portfolio</span>
+          <h2 class="text-4xl font-bold tracking-tight text-primary">Projets déployés</h2>
+        </div>
+        <p class="text-ink-dim max-w-xs text-sm md:text-right">Solutions en production, accessibles en ligne.</p>
+      </div>
+
+      <div class="grid grid-cols-1 projects-grid gap-6 mb-8">
+
+        <!-- World Model JEPA -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-edge-light/20 flex flex-col hidden-fade">
+          <div class="overflow-hidden">
+            <img
+              src="assets/worldmodelIllustration.png"
+              alt="Illustration du projet World Model JEPA – représentation latente et planification"
+              class="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-primary-light bg-primary-fixed/30 px-2.5 py-1 rounded-full">Research · Deep Learning</span>
+                <h3 class="text-2xl font-bold text-primary mt-2">World Model JEPA</h3>
+              </div>
+              <a href="https://worldmodel.rogues.fr" target="_blank" rel="noopener" class="shrink-0 text-primary hover:text-primary-light transition-colors mt-1" aria-label="Voir World Model JEPA">
+                <span class="material-symbols-outlined text-xl">open_in_new</span>
+              </a>
+            </div>
+            <p class="text-sm text-ink-dim leading-relaxed mb-5">
+              Exploration personnelle des architectures JEPA : un Vision Transformer + prédicteur entraîné sans labels sur un environnement simulé. Résultats : émergence spontanée d'une structure spatiale (R² = 1.0) et planification de trajectoires dans l'espace latent (100 % de réussite sur les tests).
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Python</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">PyTorch</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Vision Transformer</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">JEPA</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">PCA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VisionTrafic -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-edge-light/20 flex flex-col hidden-fade">
+          <div class="overflow-hidden">
+            <img
+              src="assets/visiontrafic.webp"
+              alt="Aperçu de VisionTrafic – dashboard de détection d'objets temps réel"
+              class="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-primary-light bg-primary-fixed/30 px-2.5 py-1 rounded-full">Computer Vision · MLOps</span>
+                <h3 class="text-2xl font-bold text-primary mt-2">VisionTrafic</h3>
+              </div>
+              <a href="https://visiontrafic.rogues.fr" target="_blank" rel="noopener" class="shrink-0 text-primary hover:text-primary-light transition-colors mt-1" aria-label="Voir VisionTrafic">
+                <span class="material-symbols-outlined text-xl">open_in_new</span>
+              </a>
+            </div>
+            <p class="text-sm text-ink-dim leading-relaxed mb-5">
+              Pipeline temps réel de détection d'objets à partir de webcams publiques. Ingestion par cron, traitement YOLO, stockage structuré, API REST Flask et dashboard live — déployé sur VPS Linux.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Python</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">YOLO</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Flask</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">SQLite</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">VPS Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mimozi -->
+        <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-edge-light/20 flex flex-col hidden-fade">
+          <div class="overflow-hidden">
+            <img
+              src="assets/mimozi.webp"
+              alt="Aperçu de mimozi – application IA d'aide aux devoirs de maths"
+              class="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-7 flex flex-col flex-1">
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-primary-light bg-primary-fixed/30 px-2.5 py-1 rounded-full">AI SaaS · EdTech</span>
+                <h3 class="text-2xl font-bold text-primary mt-2">mimozi</h3>
+              </div>
+              <a href="https://mimozi.fr" target="_blank" rel="noopener" class="shrink-0 text-primary hover:text-primary-light transition-colors mt-1" aria-label="Voir mimozi">
+                <span class="material-symbols-outlined text-xl">open_in_new</span>
+              </a>
+            </div>
+            <p class="text-sm text-ink-dim leading-relaxed mb-5">
+              Application IA mobile-first pour accompagner les parents dans la résolution d'exercices de maths. Photo de l'exercice → guide pédagogique IA. Gestion de comptes, profils enfants, historique et quota d'usage.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Next.js</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">TypeScript</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Supabase</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Anthropic API</span>
+              <span class="text-[10px] font-bold uppercase tracking-tighter text-edge bg-surface-mid px-2 py-1 rounded">Vercel</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Projets de formation -->
+      <div class="bg-surface-low rounded-2xl p-7 border border-edge-light/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hidden-fade">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-ink-dim mb-1">Projets de formation</p>
+          <h3 class="text-lg font-bold text-primary mb-1">Master Expert en Data Science — OpenClassrooms / CentraleSupélec</h3>
+          <p class="text-sm text-ink-dim">10 projets couvrant l'ensemble du cycle data : EDA, pipelines, ML supervisé/non supervisé, deep learning, scoring crédit, MLOps, Big Data (PySpark / AWS EMR).</p>
+        </div>
+        <a href="https://github.com/Stabadev" target="_blank" rel="noopener"
+           class="shrink-0 flex items-center gap-2 border border-primary text-primary font-semibold text-sm px-5 py-2.5 rounded-xl hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+          <span class="material-symbols-outlined text-base">code</span>
+          Voir sur GitHub
+        </a>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="bg-primary py-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+
+          <div class="md:col-span-4 hidden-fade">
+            <h2 class="text-4xl font-bold tracking-tight text-white mb-4">Compétences techniques</h2>
+            <p class="text-primary-dim/80 leading-relaxed text-sm">
+              Un ensemble d'outils maîtrisés pour concevoir des solutions data robustes, de l'ingestion à la visualisation.
+            </p>
+          </div>
+
+          <div class="md:col-span-8 grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-10 hidden-fade">
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">Langages</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Python</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>SQL</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">Data & ML</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Pandas / NumPy</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Scikit-learn</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>TensorFlow / Keras</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">Big Data</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>PySpark</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>AWS EMR / S3</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">DevOps & MLOps</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Git / CI-CD</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>MLflow</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Flask API</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">Infra</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Linux / VPS</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Déploiement web</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-[10px] font-black uppercase tracking-widest text-primary-fixed mb-4">BI & Reporting</h4>
+              <ul class="space-y-2.5 text-sm" style="color:#8fd5b4;">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Power BI</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Dataviz Python</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>Streamlit</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMATION -->
+    <section id="formation" class="max-w-7xl mx-auto px-6 py-24">
+      <div class="mb-16 hidden-fade">
+        <h2 class="text-4xl font-bold tracking-tight text-primary">Formation</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-surface-low rounded-2xl p-7 border border-edge-light/20 hidden-fade">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-primary">Master Expert en Data Science</h3>
+              <p class="text-ink-dim text-sm mt-1">OpenClassrooms / CentraleSupélec</p>
+            </div>
+            <span class="text-[10px] font-bold px-2.5 py-1 bg-white rounded border border-edge-light text-ink-dim uppercase tracking-wide shrink-0">2024</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-low rounded-2xl p-7 border border-edge-light/20 hidden-fade">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-primary">Certification Python</h3>
+              <p class="text-ink-dim text-sm mt-1">MITx — edX</p>
+            </div>
+            <span class="text-[10px] font-bold px-2.5 py-1 bg-white rounded border border-edge-light text-ink-dim uppercase tracking-wide shrink-0">2018</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-low rounded-2xl p-7 border border-edge-light/20 hidden-fade">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-primary">Licence Marketing</h3>
+              <p class="text-ink-dim text-sm mt-1">FEDE</p>
+            </div>
+            <span class="text-[10px] font-bold px-2.5 py-1 bg-white rounded border border-edge-light text-ink-dim uppercase tracking-wide shrink-0">2009</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-low rounded-2xl p-7 border border-edge-light/20 hidden-fade">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-lg font-bold text-primary">Licence Ingénierie de la Construction</h3>
+              <p class="text-ink-dim text-sm mt-1">INSA Toulouse</p>
+            </div>
+            <span class="text-[10px] font-bold px-2.5 py-1 bg-white rounded border border-edge-light text-ink-dim uppercase tracking-wide shrink-0">2008</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div class="bg-primary rounded-2xl p-10 relative overflow-hidden group hidden-fade">
+          <div class="relative z-10">
+            <h2 class="text-2xl font-bold text-white mb-4">Travaillons ensemble.</h2>
+            <p class="text-sm leading-relaxed mb-8" style="color:#8fd5b4;opacity:0.85;">
+              Ouvert aux opportunités en data engineering, data analyse, et aux projets qui ont un impact concret.
+            </p>
+            <a href="mailto:alexandre.rogues@gmail.com" class="email-link font-bold text-primary-fixed hover:text-white transition-colors border-b-2 border-primary-fixed/30 hover:border-primary-fixed pb-0.5">
+              alexandre.rogues@gmail.com
+            </a>
+          </div>
+          <div class="absolute top-0 right-0 p-6 text-white/5 group-hover:text-white/10 transition-colors pointer-events-none">
+            <span class="material-symbols-outlined" style="font-size:9rem;line-height:1;">mail</span>
+          </div>
+        </div>
+
+        <div class="bg-surface-low rounded-2xl p-10 border border-edge-light/20 flex flex-col justify-center hidden-fade">
+          <h2 class="text-xl font-bold text-primary mb-6">Retrouvez-moi</h2>
+          <div class="space-y-4">
+            <a href="https://www.linkedin.com/in/alexandrerogues/" target="_blank" rel="noopener"
+               class="flex items-center gap-3 text-ink-dim hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-lg">person</span>
+              <span class="text-sm font-medium">linkedin.com/in/alexandrerogues</span>
+            </a>
+            <a href="https://github.com/Stabadev" target="_blank" rel="noopener"
+               class="flex items-center gap-3 text-ink-dim hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-lg">code</span>
+              <span class="text-sm font-medium">github.com/Stabadev</span>
+            </a>
+            <a href="CV_Rogues_Alexandre_122025.pdf" download
+               class="flex items-center gap-3 text-ink-dim hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-lg">download</span>
+              <span class="text-sm font-medium">Télécharger le CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-edge-light/30 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <span class="text-xs text-ink-dim/60 uppercase tracking-widest">© 2026 Alexandre Rogues · Pélussin, France</span>
+      <div class="flex items-center gap-8">
+        <a href="https://www.linkedin.com/in/alexandrerogues/" target="_blank" rel="noopener" class="text-xs uppercase tracking-widest text-ink-dim hover:text-primary transition-colors">LinkedIn</a>
+        <a href="https://github.com/Stabadev" target="_blank" rel="noopener" class="text-xs uppercase tracking-widest text-ink-dim hover:text-primary transition-colors">GitHub</a>
+        <a href="mailto:alexandre.rogues@gmail.com" class="text-xs uppercase tracking-widest text-ink-dim hover:text-primary transition-colors">Email</a>
+        <a href="/en/" class="text-xs uppercase tracking-widest text-ink-dim hover:text-primary transition-colors font-bold">EN</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM NAV -->
+  <nav class="md:hidden fixed bottom-4 left-4 right-4 z-50">
+    <div class="bg-white/85 backdrop-blur-xl border border-edge-light/30 rounded-2xl px-2 py-2 shadow-2xl flex justify-around items-center">
+      <a href="#profil" class="flex flex-col items-center gap-0.5 px-3 py-1.5 text-primary">
+        <span class="material-symbols-outlined text-xl" style="font-variation-settings:'FILL' 1;">person</span>
+        <span class="text-[9px] font-bold uppercase tracking-wider">Profil</span>
+      </a>
+      <a href="#experience" class="flex flex-col items-center gap-0.5 px-3 py-1.5 text-ink-dim">
+        <span class="material-symbols-outlined text-xl">work</span>
+        <span class="text-[9px] font-bold uppercase tracking-wider">Parcours</span>
+      </a>
+      <a href="#projets" class="flex flex-col items-center gap-0.5 px-3 py-1.5 text-ink-dim">
+        <span class="material-symbols-outlined text-xl">layers</span>
+        <span class="text-[9px] font-bold uppercase tracking-wider">Projets</span>
+      </a>
+      <a href="#formation" class="flex flex-col items-center gap-0.5 px-3 py-1.5 text-ink-dim">
+        <span class="material-symbols-outlined text-xl">school</span>
+        <span class="text-[9px] font-bold uppercase tracking-wider">Formation</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Scroll fade-in
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.hidden-fade').forEach(el => fadeObserver.observe(el));
+
+    // Active nav link on scroll
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => {
+            l.classList.remove('text-primary', 'font-semibold', 'border-b-2', 'border-primary', 'pb-0.5');
+            l.classList.add('text-ink-dim');
+          });
+          const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+          if (active) {
+            active.classList.remove('text-ink-dim');
+            active.classList.add('text-primary', 'font-semibold', 'border-b-2', 'border-primary', 'pb-0.5');
+          }
+        }
+      });
+    }, { threshold: 0.35 });
+    document.querySelectorAll('section[id]').forEach(s => sectionObserver.observe(s));
+  </script>
+</body>
+</html>
