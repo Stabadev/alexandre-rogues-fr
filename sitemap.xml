@@ -1,39 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- Home FR -->
-  <url>
-    <loc>https://alexandre.rogues.fr/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alexandre.rogues.fr/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexandre.rogues.fr/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexandre.rogues.fr/"/>
-    <lastmod>2026-04-06</lastmod>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Home EN -->
-  <url>
-    <loc>https://alexandre.rogues.fr/en/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://alexandre.rogues.fr/en/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://alexandre.rogues.fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://alexandre.rogues.fr/"/>
-    <lastmod>2026-04-06</lastmod>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- FR CV PDF -->
-  <url>
-    <loc>https://alexandre.rogues.fr/CV_Rogues_Alexandre_122025.pdf</loc>
-    <lastmod>2026-04-06</lastmod>
-    <priority>0.4</priority>
-  </url>
-
-  <!-- EN CV PDF -->
-  <url>
-    <loc>https://alexandre.rogues.fr/en/CV_Rogues_Alexandre_122025_english.pdf</loc>
-    <lastmod>2026-04-06</lastmod>
-    <priority>0.4</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://alexandre.rogues.fr/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://alexandre.rogues.fr/projets/compenote/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://alexandre.rogues.fr/projets/atelier-coupe/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://alexandre.rogues.fr/projets/koprider/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://alexandre.rogues.fr/projets/visiontrafic/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://alexandre.rogues.fr/projets/world-model/</loc><lastmod>2026-11-11</lastmod></url>
 </urlset>
